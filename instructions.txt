@@ -1,0 +1,43 @@
+Set-up Instructions
+
+1. git init
+2. npm init -y
+3. npm install
+4. create .gitignore
+  add:
+    node_modules/
+    .DS_Store
+    dist/
+5. import and export code ex. import { PeanutButter } from './peanut-butter.js'
+6. add title to webpack.config and add description to package.json
+7. nmp run build
+8. add .eslintrc
+  basic configurations:
+  {
+"parserOptions": {
+  "ecmaVersion": 2017,
+  "sourceType": "module"
+  },
+  "extends": "eslint:recommended",
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jquery": true
+    },
+    "rules": {
+      "semi": 1,
+      "indent": ["warn", 2],
+      "no-console": "warn",
+      "no-debugger": "warn"
+    }
+    }
+8. npm run lint (to check lint)
+9. add .babelrc
+    {
+    "env": {
+      "test": {
+        "plugins": ["@babel/plugin-transform-modules-commonjs"]
+      }
+    }
+    }
+10. npm test (to test jest)
