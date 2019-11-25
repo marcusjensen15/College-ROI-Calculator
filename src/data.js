@@ -1,51 +1,56 @@
-export  let averageCostOfLiving = [{"city": "San Antonio", "living_cost": 32587	},
-{"city": "Columbus", "living_cost": 32632	},
- {"city": "Jacksonville", "living_cost": 33104	},
- {"city": "Indianapolis", "living_cost": 33530	},
- {"city": "Dallas", "living_cost": 34563	},
- {"city": "Houston", "living_cost": 35391	},
- {"city": "Phoenix", "living_cost": 37715	},
- {"city": "Philadelphia", "living_cost": 38291	},
- {"city": "Austin", "living_cost": 38369	},
- {"city": "Chicago", "living_cost": 38605	},
- {"city": "Los Angeles", "living_cost": 42825	},
- {"city": "San Diego", "living_cost": 46834	},
- {"city": "New York", "living_cost": 51323	},
- {"city": "San Jose", "living_cost": 61549	},
- {"city": "San Francisco", "living_cost": 69072	}
+export let federalTaxRate = 0.23;
 
- ];
-//annual living cost. Source: https://www.cnbc.com/2018/03/22/how-much-it-costs-a-single-person-to-live-in-the-15-largest-us-cities.html
 
-export let salaryByMajor = [{"major": "Engineering", "starting_sal": 60000 , "mid_career_sal": 100000},
+export  let averageCostOfLiving = [{"city": "San Antonio", "living_cost": 32587, "state_tax": 0.00},
+  {"city": "Columbus", "living_cost": 32632, "state_tax": 0.03},
+  {"city": "Jacksonville", "living_cost": 33104, "state_tax": 0.00	},
+  {"city": "Indianapolis", "living_cost": 33530, "state_tax": 0.03	},
+  {"city": "Dallas", "living_cost": 34563, "state_tax": 0.00	},
+  {"city": "Houston", "living_cost": 35391, "state_tax": 0.00	},
+  {"city": "Phoenix", "living_cost": 37715, "state_tax": 0.03	},
+  {"city": "Philadelphia", "living_cost": 38291, "state_tax": 0.03	},
+  {"city": "Austin", "living_cost": 38369, "state_tax": 0.00	},
+  {"city": "Chicago", "living_cost": 38605, "state_tax": 0.05	},
+  {"city": "Los Angeles", "living_cost": 42825, "state_tax": 0.06	},
+  {"city": "San Diego", "living_cost": 46834, "state_tax": 0.06	},
+  {"city": "New York", "living_cost": 51323, "state_tax": 0.05	},
+  {"city": "San Jose", "living_cost": 61549, "state_tax": 0.06	},
+  {"city": "San Francisco", "living_cost": 69072, "state_tax": 0.06	}
 
-{"major": "Computer Science", "starting_sal": 55900 , "mid_career_sal": 95500},
+];
+//annual living cost. Source: https://www.cnbc.com/2018/03/22/how-much-it-costs-a-single-person-to-live-in-the-15-largest-us-cities.html . Added state tax rate
 
-{"major": "Math", "starting_sal": 45400 , "mid_career_sal": 92400},
+export let salaryByMajor = [
 
-{"major": "Chemistry", "starting_sal": 42600 , "mid_career_sal": 79900},
+  {"major": "Engineering", "starting_sal": 60000 , "mid_career_sal": 100000},
 
-{"major": "Physics", "starting_sal": 50300 , "mid_career_sal": 97300},
+  {"major": "Computer Science", "starting_sal": 55900 , "mid_career_sal": 95500},
 
-{"major": "Economics", "starting_sal": 50100 , "mid_career_sal": 98600},
+  {"major": "Math", "starting_sal": 45400 , "mid_career_sal": 92400},
 
-{"major": "History", "starting_sal": 39200 , "mid_career_sal": 71000},
+  {"major": "Chemistry", "starting_sal": 42600 , "mid_career_sal": 79900},
 
-{"major": "Film", "starting_sal": 37900 , "mid_career_sal": 68500},
+  {"major": "Physics", "starting_sal": 50300 , "mid_career_sal": 97300},
 
-{"major": "Art History", "starting_sal": 35800 , "mid_career_sal": 64900},
+  {"major": "Economics", "starting_sal": 50100 , "mid_career_sal": 98600},
 
-{"major": "English", "starting_sal": 38000 , "mid_career_sal": 64700},
+  {"major": "History", "starting_sal": 39200 , "mid_career_sal": 71000},
 
-{"major": "Psychology", "starting_sal": 35900 , "mid_career_sal": 60400},
+  {"major": "Film", "starting_sal": 37900 , "mid_career_sal": 68500},
 
-{"major": "Nutrition", "starting_sal": 39900 , "mid_career_sal": 55300},
+  {"major": "Art History", "starting_sal": 35800 , "mid_career_sal": 64900},
 
-{"major": "Education", "starting_sal": 34900 , "mid_career_sal": 52000},
+  {"major": "English", "starting_sal": 38000 , "mid_career_sal": 64700},
 
-{"major": "Music", "starting_sal": 35900 , "mid_career_sal": 55000},
+  {"major": "Psychology", "starting_sal": 35900 , "mid_career_sal": 60400},
 
-{"major": "General Business", "starting_sal": 40800 , "mid_career_sal": 79600}
+  {"major": "Nutrition", "starting_sal": 39900 , "mid_career_sal": 55300},
+
+  {"major": "Education", "starting_sal": 34900 , "mid_career_sal": 52000},
+
+  {"major": "Music", "starting_sal": 35900 , "mid_career_sal": 55000},
+
+  {"major": "General Business", "starting_sal": 40800 , "mid_career_sal": 79600}
 
 ];
 
@@ -70,4 +75,13 @@ export let schoolType = [
 
 ];
 
-//4 year tuition cost for each type of institiution
+//4 year tuition cost for each type of institiution. Found numbers on collegeboard.com
+
+export let paybackRate = [
+  {"frequency" : "slow", "percent_paycheck": 0.10},
+  {"frequency" : "medium", "percent_paycheck": 0.15},
+  {"frequency" : "fast", "percent_paycheck": 0.25}
+
+];
+
+//how fast they are going to pay back as a percentage of paycheck
