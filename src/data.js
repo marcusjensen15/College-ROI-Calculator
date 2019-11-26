@@ -102,22 +102,12 @@ export class MyEducation{
     this.loanPrincipalAmount = this.loanPrincipalAmount();
     this.paycheckPaybackRate = this.paybackRate();
     this.studentLoanRate = 0.045;
+    this.postTaxIncome = (1 - this.effectiveTaxRate) * this.startingSalary;
+    this.postTaxIncomeMidCareer = (1 - this.effectiveTaxRate) * this.midCareerSalary;
+    this.paybackPeriod = this.paybackPeriod();
 
-
-    //assuming federal student loan rate
-
-
-    //below is example
-    // this.earthAge = earthAge;
-    // this.earthAverageLife = 85;
-    // this.mercuryAge = this.mercuryAgeCalc();
-    // this.mercuryYearsRemaining = this.mercuryYearsLeft();
-    // this.venusAge = this.venusAgeCalc();
-    // this.venusYearsRemaining = this.venusYearsLeft();
-    // this.marsAge = this.marsAgeCalc();
-    // this.marsYearsRemaining = this.marsYearsLeft();
-    // this.jupiterAge = this.jupiterAgeCalc();
-    // this.jupiterYearsRemaining = this.jupiterYearsLeft();
+    //assuming federal student loan rate. Student loans are compounded daily. consult:
+    //https://studentloanhero.com/featured/truth-about-student-loan-interest-rates/ for resource
 
 
   }
@@ -169,7 +159,17 @@ export class MyEducation{
       }
     }
   }
+  paybackPeriod(){
+    let principal = this.loanPrincipalAmount;
+    let salaryMultiple = this.startingSalary;
+    for(let i = 0;i<14600;i++){
+      if(i % 30 !== 0 && principal > 0){
+        principal = principal + (principal * (this.studentLoanRate * principal));}
+      else if(principal <= 0 ){return "it will take you " + i/365 + " years to pay back your loan";}
+      else if(i > 7300){salaryMultiple = this.midCareerSalary;}
+      else if(i % 30 === 0){principal = principal - (salaryMultiple*this.paycheckPaybackRate);}
+      else if (i > 14,600){return "you will not be able to pay back this loan in your lifetime." + i;}
 
-
-
+    }
+  }
 }
