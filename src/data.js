@@ -99,7 +99,9 @@ export class MyEducation{
     this.startingSalary = this.startingSalary();
     this.midCareerSalary = this.midCareerSalary();
     this.effectiveTaxRate = this.effectiveTaxRate();
-    
+    this.loanPrincipalAmount = this.loanPrincipalAmount();
+
+
 
 
 
@@ -137,5 +139,24 @@ export class MyEducation{
         return averageCostOfLiving[i].state_tax + federalTaxRate;
       }
 
+  }
+  loanPrincipalAmount(){
+    let tuitionExpense;
+    let lifeStyleExpense;
+    let principalAmount;
+    for(let i = 0; i < schoolType.length;i++){
+      if(this.schoolType === schoolType[i].type){
+        tuitionExpense = schoolType[i].four_year_cost;
+      }
+    }
+    for(let j=0; j< lifeStyle.length;j++ ){
+      if(this.lifestyle === lifeStyle[j].lifestyle){
+        lifeStyleExpense = lifeStyle[j].cost * 4;
+
+      }
+
+    }
+    principalAmount = tuitionExpense + lifeStyleExpense;
+    return principalAmount;
   }
 }
