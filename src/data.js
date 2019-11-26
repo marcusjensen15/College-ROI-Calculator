@@ -85,3 +85,57 @@ export let paybackRate = [
 ];
 
 //how fast they are going to pay back as a percentage of paycheck
+
+
+
+export class MyEducation{
+  constructor(inputDegree,inputSchoolType,inputGradLocation,inputLifestyle,inputCashToday,paycheckPayback){
+    this.degree = inputDegree;
+    this.schoolType = inputSchoolType;
+    this.gradLocation = inputGradLocation;
+    this.lifestyle = inputLifestyle;
+    this.cashToday = inputCashToday;
+    this.paycheckPayback = paycheckPayback;
+    this.startingSalary = this.startingSalary();
+    this.midCareerSalary = this.midCareerSalary();
+    this.effectiveTaxRate = this.effectiveTaxRate();
+    
+
+
+
+    //below is example
+    // this.earthAge = earthAge;
+    // this.earthAverageLife = 85;
+    // this.mercuryAge = this.mercuryAgeCalc();
+    // this.mercuryYearsRemaining = this.mercuryYearsLeft();
+    // this.venusAge = this.venusAgeCalc();
+    // this.venusYearsRemaining = this.venusYearsLeft();
+    // this.marsAge = this.marsAgeCalc();
+    // this.marsYearsRemaining = this.marsYearsLeft();
+    // this.jupiterAge = this.jupiterAgeCalc();
+    // this.jupiterYearsRemaining = this.jupiterYearsLeft();
+
+
+  }
+
+  startingSalary(){
+    for(let i = 0; i < salaryByMajor.length;i++)
+      if (this.degree === salaryByMajor[i].major){
+        return salaryByMajor[i].starting_sal;
+      }
+  }
+  midCareerSalary(){
+    for(let i = 0; i < salaryByMajor.length;i++)
+      if (this.degree === salaryByMajor[i].major){
+        return salaryByMajor[i].mid_career_sal;
+      }
+
+  }
+  effectiveTaxRate(){
+    for(let i = 0; i < averageCostOfLiving.length;i++)
+      if (this.gradLocation === averageCostOfLiving[i].city){
+        return averageCostOfLiving[i].state_tax + federalTaxRate;
+      }
+
+  }
+}
