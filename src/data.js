@@ -100,9 +100,11 @@ export class MyEducation{
     this.midCareerSalary = this.midCareerSalary();
     this.effectiveTaxRate = this.effectiveTaxRate();
     this.loanPrincipalAmount = this.loanPrincipalAmount();
+    this.paycheckPaybackRate = this.paybackRate();
+    this.studentLoanRate = 0.045;
 
 
-
+    //assuming federal student loan rate
 
 
     //below is example
@@ -159,4 +161,15 @@ export class MyEducation{
     principalAmount = tuitionExpense + lifeStyleExpense;
     return principalAmount;
   }
+
+  paybackRate(){
+    for(let i = 0; i < paybackRate.length;i++ ){
+      if(this.paycheckPayback === paybackRate[i].frequency){
+        return paybackRate[i].percent_paycheck;
+      }
+    }
+  }
+
+
+
 }
