@@ -101,7 +101,7 @@ export class MyEducation{
     this.effectiveTaxRate = this.effectiveTaxRate();
     this.loanPrincipalAmount = this.loanPrincipalAmount();
     this.paycheckPaybackRate = this.paybackRate();
-    this.studentLoanRate = 0.045;
+    this.studentLoanRate = 0.045/365;
     this.postTaxIncome = (1 - this.effectiveTaxRate) * this.startingSalary;
     this.postTaxIncomeMidCareer = (1 - this.effectiveTaxRate) * this.midCareerSalary;
     this.paybackPeriod = this.paybackPeriod();
@@ -160,16 +160,35 @@ export class MyEducation{
     }
   }
   paybackPeriod(){
-    let principal = this.loanPrincipalAmount;
+    let principal = this.loanPrincipalAmount - this.cashToday;
     let salaryMultiple = this.startingSalary;
-    for(let i = 0;i<14600;i++){
-      if(i % 30 !== 0 && principal > 0){
-        principal = principal + (principal * (this.studentLoanRate * principal));}
-      else if(principal <= 0 ){return "it will take you " + i/365 + " years to pay back your loan";}
-      else if(i > 7300){salaryMultiple = this.midCareerSalary;}
-      else if(i % 30 === 0){principal = principal - (salaryMultiple*this.paycheckPaybackRate);}
-      else if (i > 14,600){return "you will not be able to pay back this loan in your lifetime." + i;}
 
+    for(let i = 0; i<14601; i++){
+
+       if(i % 30 !== 0 && principal > 0){
+
+        // principal = principal + (this.studentLoanRate * principal);}
+        principal = principal + (this.studentLoanRate * principal);}
+
+
+      else if(principal <= 0 && i < 14600){return "it will take you " + i/365 + " years to pay back your loan";}
+
+      else if(i > 7300 && i % 30 === 0){
+
+        salaryMultiple = this.midCareerSalary;
+        // principal = principal - (salaryMultiple*this.paycheckPaybackRate);
+        principal = principal - ((salaryMultiple*this.paycheckPaybackRate)/12);
+
+      } // this should be combined with the next condition and at the top
+      else if(i < 7300 && i % 30 === 0){
+        // principal = principal - (salaryMultiple*this.paycheckPaybackRate);
+        principal = principal - ((salaryMultiple*this.paycheckPaybackRate)/12);
+
+      }
+      // else if (i > 14,600 && principal > 0){return "you will not be able to pay back this loan in your lifetime. You will have " + principal + " left to pay after 40 years.";}
+      //problem: we need an embeded if statement i > 7300 and other stuff in same if condition. if not, it is just changing the value and not compounding becuase it breaks that loop ideration if true
     }
+    return "you will not be able to pay back this loan in your lifetime. You will have " + principal + " left to pay after 40 years."
   }
 }
+//not taking into account cash on hand either
