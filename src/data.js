@@ -161,13 +161,14 @@ export class MyEducation{
   }
   paybackPeriod(){
     let principal = this.loanPrincipalAmount - this.cashToday;
-    let salaryMultiple = this.startingSalary;
+    let salaryMultiple = this.postTaxIncome;
 
     for(let i = 0; i<14601; i++){
 
-       if(i % 30 !== 0 && principal > 0){
+      if(this.cashToday > this.loanPrincipalAmount){return "You dont need a loan to pay for your education";}
 
-        // principal = principal + (this.studentLoanRate * principal);}
+       else if(i % 30 !== 0 && principal > 0){
+
         principal = principal + (this.studentLoanRate * principal);}
 
 
@@ -175,7 +176,7 @@ export class MyEducation{
 
       else if(i > 7300 && i % 30 === 0){
 
-        salaryMultiple = this.midCareerSalary;
+        salaryMultiple = this.postTaxIncomeMidCareer;
         // principal = principal - (salaryMultiple*this.paycheckPaybackRate);
         principal = principal - ((salaryMultiple*this.paycheckPaybackRate)/12);
 
@@ -185,10 +186,9 @@ export class MyEducation{
         principal = principal - ((salaryMultiple*this.paycheckPaybackRate)/12);
 
       }
-      // else if (i > 14,600 && principal > 0){return "you will not be able to pay back this loan in your lifetime. You will have " + principal + " left to pay after 40 years.";}
-      //problem: we need an embeded if statement i > 7300 and other stuff in same if condition. if not, it is just changing the value and not compounding becuase it breaks that loop ideration if true
+
     }
     return "you will not be able to pay back this loan in your lifetime. You will have " + principal + " left to pay after 40 years."
   }
 }
-//not taking into account cash on hand either
+//need to make sure it is delivering the correct values. i think it is overshooting the number of years it takes to payback
