@@ -1,8 +1,7 @@
-# Marcus Jensen, Coleman Currie, Judah Barton, Ali Amirhamzeh
-## Author
+## Authors: Marcus Jensen, Coleman Currie, Judah Barton, Ali Amirhamzeh
 
 ### Description
-#### This application will help pre-college students understand how much attending a Four Year University actually costs. User will input: The amount of cash they have on hand, they type of University they would like to attend, where they would like to live after they graduate, 
+#### This application will help pre-college students understand how much attending a Four Year University actually costs. User will input: The amount of cash they have on hand, they type of University they would like to attend, where they would like to live after they graduate, what they would like to study in school, and how aggressively they would like to pay back their student debt (should they have any).
 
 
 ## GitHub Pages link
@@ -10,10 +9,19 @@
   [Visit (site))](link)
 
 ### Known Bugs
-#### None
 
-### Setup
-#### Clone this repository:
+#### No known bugs, please notify one of the authors should you encounter any.
+
+### Setup:
+#### Clone this repository.
+#### Navigate to the cloned repository within your terminal.
+#### Run the "npm install" command.
+#### Run "npm run start" to see the application in action.
+#### If you choose to edit this application, open the corresponding files within atom or another text editor.
+
+
+
+
 
 #### Please let me know if you have any problems!
 
