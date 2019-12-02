@@ -63,35 +63,56 @@ export  let averageCostOfLiving = [{"city": "San Antonio", "living_cost": 32587,
 
 export let salaryByMajor = [
 
-  {"major": "Engineering", "starting_sal": 60000 , "mid_career_sal": 100000},
-
-  {"major": "Computer Science", "starting_sal": 55900 , "mid_career_sal": 95500},
-
-  {"major": "Math", "starting_sal": 45400 , "mid_career_sal": 92400},
-
-  {"major": "Chemistry", "starting_sal": 42600 , "mid_career_sal": 79900},
-
-  {"major": "Physics", "starting_sal": 50300 , "mid_career_sal": 97300},
-
+  {"major": "Chemical Engineering", "starting_sal": 63200 , "mid_career_sal": 107000},
+  {"major": "Computer Engineering", "starting_sal": 61400 , "mid_career_sal": 105000},
+  {"major": "Electrical Engineering", "starting_sal": 60900 , "mid_career_sal": 103000},
+  {"major": "Aerospace Engineering", "starting_sal": 57700 , "mid_career_sal": 101000},
   {"major": "Economics", "starting_sal": 50100 , "mid_career_sal": 98600},
-
+  {"major": "Physics", "starting_sal": 50300 , "mid_career_sal": 97300},
+  {"major": "Computer Science", "starting_sal": 55900 , "mid_career_sal": 95500},
+  {"major": "Industrial Engineering", "starting_sal": 57700 , "mid_career_sal": 94700},
+  {"major": "Mechanical Engineering", "starting_sal": 57900 , "mid_career_sal": 93600},
+  {"major": "Math", "starting_sal": 45400 , "mid_career_sal": 92400},
+  {"major": "Physician Assistant", "starting_sal": 74300 , "mid_career_sal": 91700},
+  {"major": "Cival Engineering", "starting_sal": 53900 , "mid_career_sal": 90500},
+  {"major": "Construction", "starting_sal": 53700 , "mid_career_sal": 88900},
+  {"major": "Finance", "starting_sal": 47900 , "mid_career_sal": 88300},
+  {"major": "Managemnet Information Systems", "starting_sal": 49200 , "mid_career_sal": 82300},
+  {"major": "Philosophy", "starting_sal": 39900 , "mid_career_sal": 81200},
+  {"major": "International Relations", "starting_sal": 40900 , "mid_career_sal": 80900},
+  {"major": "Chemistry", "starting_sal": 42600 , "mid_career_sal": 79900},
+  {"major": "Marketing", "starting_sal": 40800 , "mid_career_sal": 79600},
+  {"major": "Geology", "starting_sal": 43500 , "mid_career_sal": 79500},
+  {"major": "Political Science", "starting_sal": 40800 , "mid_career_sal": 78200},
+  {"major": "Accounting", "starting_sal": 46000 , "mid_career_sal": 77100},
+  {"major": "Architecture", "starting_sal": 41600 , "mid_career_sal": 76800},
+  {"major": "Information Technology", "starting_sal": 49100 , "mid_career_sal": 74800},
+  {"major": "Business Management", "starting_sal": 43000 , "mid_career_sal": 72100},
+  {"major": "Agriculture", "starting_sal": 42600 , "mid_career_sal": 71900},
   {"major": "History", "starting_sal": 39200 , "mid_career_sal": 71000},
-
+  {"major": "Communications", "starting_sal": 38100 , "mid_career_sal": 70000},
   {"major": "Film", "starting_sal": 37900 , "mid_career_sal": 68500},
-
+  {"major": "Nursing", "starting_sal": 54200 , "mid_career_sal": 67000},
+  {"major": "Journalism", "starting_sal": 35600 , "mid_career_sal": 66700},
+  {"major": "Geography", "starting_sal": 41200 , "mid_career_sal": 65500},
   {"major": "Art History", "starting_sal": 35800 , "mid_career_sal": 64900},
-
+  {"major": "Biology", "starting_sal": 38800 , "mid_career_sal": 64800},
   {"major": "English", "starting_sal": 38000 , "mid_career_sal": 64700},
-
+  {"major": "Forestry", "starting_sal": 39100 , "mid_career_sal": 62600},
+  {"major": "Anthropology", "starting_sal": 36800 , "mid_career_sal": 61500},
+  {"major": "Health Care Administration", "starting_sal": 38800 , "mid_career_sal": 60600},
   {"major": "Psychology", "starting_sal": 35900 , "mid_career_sal": 60400},
-
+  {"major": "Graphic Design", "starting_sal": 35700 , "mid_career_sal": 59800},
+  {"major": "Sociology", "starting_sal": 36500 , "mid_career_sal": 58200},
+  {"major": "Hospitality & Tourism", "starting_sal": 37800 , "mid_career_sal": 57500},
+  {"major": "Drama", "starting_sal": 35900 , "mid_career_sal": 56900},
+  {"major": "Criminal Justice", "starting_sal": 35000 , "mid_career_sal": 56300}
   {"major": "Nutrition", "starting_sal": 39900 , "mid_career_sal": 55300},
-
-  {"major": "Education", "starting_sal": 34900 , "mid_career_sal": 52000},
-
   {"major": "Music", "starting_sal": 35900 , "mid_career_sal": 55000},
-
-  {"major": "General Business", "starting_sal": 40800 , "mid_career_sal": 79600}
+  {"major": "Interior Design", "starting_sal": 36100 , "mid_career_sal": 53200},
+  {"major": "Spanish", "starting_sal": 34000 , "mid_career_sal": 53100}
+  {"major": "Education", "starting_sal": 34900 , "mid_career_sal": 52000},
+  {"major": "Religion", "starting_sal": 34100 , "mid_career_sal": 52000}
 
 ];
 
