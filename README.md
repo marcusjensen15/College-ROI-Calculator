@@ -1,8 +1,8 @@
-# Title
+# Marcus Jensen, Coleman Currie, Judah Barton, Ali Amirhamzeh
 ## Author
 
 ### Description
-#### This website will...:
+#### This application will help pre-college students understand how much attending a Four Year University actually costs. User will input: The amount of cash they have on hand, they type of University they would like to attend, where they would like to live after they graduate, 
 
 
 ## GitHub Pages link
