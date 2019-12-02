@@ -51,31 +51,27 @@ export let salaryByMajor = [
   {"major": "History", "starting_sal": 39200 , "mid_career_sal": 71000},
   {"major": "Communications", "starting_sal": 38100 , "mid_career_sal": 70000},
   {"major": "Film", "starting_sal": 37900 , "mid_career_sal": 68500},
-
-
-  {"major": "English", "starting_sal": 38000 , "mid_career_sal": 64700},
-
-
-  {"major": "Physics", "starting_sal": 50300 , "mid_career_sal": 97300},
-
-  {"major": "Economics", "starting_sal": 50100 , "mid_career_sal": 98600},
-
-
-  {"major": "Film", "starting_sal": 37900 , "mid_career_sal": 68500},
-
+  {"major": "Nursing", "starting_sal": 54200 , "mid_career_sal": 67000},
+  {"major": "Journalism", "starting_sal": 35600 , "mid_career_sal": 66700},
+  {"major": "Geography", "starting_sal": 41200 , "mid_career_sal": 65500},
   {"major": "Art History", "starting_sal": 35800 , "mid_career_sal": 64900},
-
+  {"major": "Biology", "starting_sal": 38800 , "mid_career_sal": 64800},
   {"major": "English", "starting_sal": 38000 , "mid_career_sal": 64700},
-
+  {"major": "Forestry", "starting_sal": 39100 , "mid_career_sal": 62600},
+  {"major": "Anthropology", "starting_sal": 36800 , "mid_career_sal": 61500},
+  {"major": "Health Care Administration", "starting_sal": 38800 , "mid_career_sal": 60600},
   {"major": "Psychology", "starting_sal": 35900 , "mid_career_sal": 60400},
-
+  {"major": "Graphic Design", "starting_sal": 35700 , "mid_career_sal": 59800},
+  {"major": "Sociology", "starting_sal": 36500 , "mid_career_sal": 58200},
+  {"major": "Hospitality & Tourism", "starting_sal": 37800 , "mid_career_sal": 57500},
+  {"major": "Drama", "starting_sal": 35900 , "mid_career_sal": 56900},
+  {"major": "Criminal Justice", "starting_sal": 35000 , "mid_career_sal": 56300}
   {"major": "Nutrition", "starting_sal": 39900 , "mid_career_sal": 55300},
-
-  {"major": "Education", "starting_sal": 34900 , "mid_career_sal": 52000},
-
   {"major": "Music", "starting_sal": 35900 , "mid_career_sal": 55000},
-
-  {"major": "General Business", "starting_sal": 40800 , "mid_career_sal": 79600}
+  {"major": "Interior Design", "starting_sal": 36100 , "mid_career_sal": 53200},
+  {"major": "Spanish", "starting_sal": 34000 , "mid_career_sal": 53100}
+  {"major": "Education", "starting_sal": 34900 , "mid_career_sal": 52000},
+  {"major": "Religion", "starting_sal": 34100 , "mid_career_sal": 52000}
 
 ];
 
