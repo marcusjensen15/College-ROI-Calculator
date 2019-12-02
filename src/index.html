@@ -1,9 +1,98 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>College Return on Investment Calculator</title>
   </head>
   <body>
+    <form class="calculator">
+      <div class="form-group">
+        <label for="city">Select a city to live in after college: </label>
+        <select class="form-control" id="city">
+        <option value=""></option>
+        <option value="San Antonio">San Antonio</option>
+        <option value="Columbus">Columbus</option>
+        <option value="Jacksonville">Jacksonville</option>
+        <option value="Indianapolis">Indianapolis</option>
+        <option value="Dallas">Dallas</option>
+        <option value="Houston">Houston</option>
+        <option value="Pheonix">Pheonix</option>
+        <option value="Philadelphia">Philadelphia</option>
+        <option value="Austino">Austin</option>
+        <option value="Chicago">Chicago</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="San Diego">San Diego</option>
+        <option value="New York">New York</option>
+        <option value="San Jose">San Jose</option>
+        <option value="San Francisco">San Francisco</option>
+
+      </select>
+      </div>
+      <div class="form-group">
+        <label for="salaryByMajor">Select which major you'd like to get a degree in: </label>
+        <select class="form-control" id="major">
+        <option value=""></option>
+        <option value="Engineering">Engineering</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Math">Math</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Physics">Physics</option>
+        <option value="Economics">Economics</option>
+        <option value="History">History</option>
+        <option value="Film">Film</option>
+        <option value="Art History">Art History</option>
+        <option value="English">English</option>
+        <option value="Psychology">Psychology</option>
+        <option value="English">English</option>
+        <option value="Nutrition">Nutrition</option>
+        <option value="Education">Education</option>
+        <option value="Music">Music</option>
+        <option value="General Business">General Business</option>
+
+
+      </select>
+      </div>
+      <div class="form-group">
+        <label for="Lifestyle">Which of these lifestyle preferences best describe you?</label>
+        <select class="form-control" id="lifestyle">
+        <option value=""></option>
+        <option value="low">Humble lifestyle</option>
+        <option value="medium">Likes to have some fun</option>
+        <option value="high">Super baller lifestyle</option>
+
+      </select>
+      </div>
+      <div class="form-group">
+        <label for="schoolType">Which type of school will you be attending?</label>
+        <select class="form-control" id="type">
+        <option value=""></option>
+        <option value="in state public">In State public University </option>
+        <option value="out of state public">Out of State public University</option>
+        <option value="private">Private School</option>
+
+      </select>
+      </div>
+      <div class="form-group">
+        <label for="frequency">How quickly would you like to pay back your student loans?</label>
+        <select class="form-control" id="frequency">
+        <option value=""></option>
+        <option value="slow">As slow as possible: 10% of my paycheck</option>
+        <option value="medium">Somewhat quickly: 15% of my paycheck</option>
+        <option value="fast">Super fast: 25% of my paycheck</option>
+
+      </select>
+      </div>
+      <div class="cashToday">
+        <span>Lastly, let us know how much cash you have in hand and then press submit below</span>
+        <input type="number" name="" value="">
+        <button type="submit" name="button">Calculate my ROI</button>
+
+      </div>
+
+    </form>
+    <div class="results">
+      <h3></h3>
+
+    </div>
 
   </body>
 </html>
