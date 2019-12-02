@@ -5,7 +5,7 @@ import './styles.css';
 import {averageCostOfLiving, salaryByMajor, lifeStyle, schoolType, paybackRate, federalTaxRate, MyEducation} from './data.js';
 
 
-let myEducation = new MyEducation("English","in state public", "San Francisco","medium", 100000, "fast");
+let myEducation = new MyEducation("English","in state public", "San Antonio","medium", 80000, "fast");
 
 
 
