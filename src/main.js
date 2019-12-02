@@ -16,7 +16,7 @@ $(document).ready(function(){
     // let myEducation = new MyEducation("English","in state public", "San Francisco","medium", 100000, "fast");
     let myEducation = new MyEducation(userMajor, userSchoolType, userCity, userLifeStyle, userCashToday, userFrequency);
 
-let myEducation = new MyEducation("English","in state public", "San Antonio","medium", 80000, "fast");
+    $(".results").text(myEducation.paybackPeriod);
 
   });
 
