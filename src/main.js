@@ -10,8 +10,8 @@ $(document).ready(function(){
     let userCity = $("#city option:selected").val();
     let userMajor = $("#major option:selected").val();
     let userLifeStyle = $("#lifestyle option:selected").val();
-    let userSchoolType = $("#type option:selected").val();
-    let userFrequency = $("#frequency option:selected").val();
+    let userSchoolType = $("input:radio[name=typeOfSchool]:checked").val();
+    let userFrequency = $("input:radio[name=payPercentage]:checked").val();
     let userCashToday = $("#cashToday").val();
     // let myEducation = new MyEducation("English","in state public", "San Francisco","medium", 100000, "fast");
     let myEducation = new MyEducation(userMajor, userSchoolType, userCity, userLifeStyle, userCashToday, userFrequency);

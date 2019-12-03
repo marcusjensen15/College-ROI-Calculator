@@ -16,3 +16,18 @@
   margin: 10px;
 
 }
+
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + h1, [type=radio] + img {
+  cursor: pointer;
+}
+
+[type=radio]:checked + h1, [type=radio]:checked + img {
+  outline: 2px solid #f00;
+}
