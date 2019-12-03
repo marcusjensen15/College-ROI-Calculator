@@ -63,22 +63,29 @@ export class MyCarLease{
 
   total_monthly_lease_payment(){
     let totalMonthlyLease = this.depreciationFeeMonthly + this.financingFeeMonthly + this.salesTaxMonthly;
-    return totalMonthlyLease;
+    if(totalMonthlyLease > 0){return totalMonthlyLease;
+    }else{return "It doesn't make sense to lease the car, you can buy it in cash!";}
+
   }
 
   depreciationThreeYear(){
     let threeYearDepreciation = this.depreciationFeeMonthly * this.leaseTerm;
-    return threeYearDepreciation;
+    if(threeYearDepreciation > 0){return threeYearDepreciation;}
+    else {return " "; }
+
   }
 
   financingFeeThreeYear(){
     let threeYearFinancingFee = this.financingFeeMonthly * this.leaseTerm;
-    return threeYearFinancingFee;
+    if (threeYearFinancingFee > 0){return threeYearFinancingFee;}
+    else{return " ";}
   }
 
   salesTaxThreeYear(){
     let threeYearTax = this.salesTaxMonthly * this.leaseTerm;
-    return threeYearTax;
+    if (threeYearTax > 0){return threeYearTax;}
+    else{return " ";}
+
   }
 
 }
