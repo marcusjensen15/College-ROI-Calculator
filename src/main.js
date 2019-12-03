@@ -11,9 +11,23 @@ $(document).ready(function(){
     $("#collegePage").show();
     $("#firstPage").hide();
   });
-
   $("#carLeasing").click(function(event){
     event.preventDefault();
+    $("#car_lease").show();
+    $("#firstPage").hide();
+  });
+
+  $(".carLeaseForm").submit(function(event){
+    event.preventDefault();
+    let inputMsrp = parseFloat($("#userMsrp").val());
+    let inputTradeIn = parseFloat($("#userTradeIn").val());
+    let inputDownPayment = parseFloat($("#userDownPayment").val());
+    let inputSalesTax = parseFloat($("#userSalesTax").val());
+    let inputApr = parseFloat($("#userApr").val());
+
+    let myCarLease = new MyCarLease(inputMsrp,inputTradeIn,inputDownPayment,inputSalesTax,inputApr);
+
+    console.log(myCarLease);
 
   });
 
@@ -34,9 +48,7 @@ $(document).ready(function(){
     //below is car lease testing
     console.log(myEducation);
 
-    let myCarLease = new MyCarLease(30000,4000,1000,0.05,8.5);
 
-    console.log(myCarLease);
 
 
   });

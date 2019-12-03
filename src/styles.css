@@ -40,6 +40,11 @@
   display: none;
 }
 
+
+#car_lease {
+  display: none;
+}
+
 #collegeROI, #carLeasing {
   height: 300px;
   text-align: center;
