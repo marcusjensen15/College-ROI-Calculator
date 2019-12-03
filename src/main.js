@@ -11,6 +11,11 @@ $(document).ready(function(){
     $("#collegePage").show();
     $("#firstPage").hide();
   });
+  $("#carLeasing").click(function(event){
+    event.preventDefault();
+    $("#car_lease").show();
+    $("#firstPage").hide();
+  });
 
   $(".carLeaseForm").submit(function(event){
     event.preventDefault();
