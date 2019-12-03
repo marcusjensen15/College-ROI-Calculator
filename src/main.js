@@ -32,7 +32,7 @@ $(document).ready(function(){
     $("#finalResults").text(myEducation.paybackPeriod);
 
     //below is car lease testing
-
+    console.log(myEducation);
 
     let myCarLease = new MyCarLease(30000,4000,1000,0.05,8.5);
 
