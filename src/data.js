@@ -74,7 +74,7 @@ export let salaryByMajor = [
   {"major": "Mechanical Engineering", "starting_sal": 57900 , "mid_career_sal": 93600},
   {"major": "Math", "starting_sal": 45400 , "mid_career_sal": 92400},
   {"major": "Physician Assistant", "starting_sal": 74300 , "mid_career_sal": 91700},
-  {"major": "Cival Engineering", "starting_sal": 53900 , "mid_career_sal": 90500},
+  {"major": "Civil Engineering", "starting_sal": 53900 , "mid_career_sal": 90500},
   {"major": "Construction", "starting_sal": 53700 , "mid_career_sal": 88900},
   {"major": "Finance", "starting_sal": 47900 , "mid_career_sal": 88300},
   {"major": "Managemnet Information Systems", "starting_sal": 49200 , "mid_career_sal": 82300},
@@ -234,7 +234,7 @@ export class MyEducation{
         principal = principal + (this.studentLoanRate * principal);}
 
 
-      else if(principal <= 0 && i < 14600){return "it will take you " + Math.round(i/365) + "<br> years to pay back your loan";}
+      else if(principal <= 0 && i < 14600){return "it will take you " + Math.round(i/365) + " years to pay back your loan";}
 
       else if(i > 7300 && i % 30 === 0){
 
