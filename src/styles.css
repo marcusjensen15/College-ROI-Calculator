@@ -1,5 +1,8 @@
 .jumbotron {
   text-align: center;
+  font-family: sans-serif;
+  opacity: 80%;
+  margin-top: 20px;
 }
 .form-control {
   width: 200px;
@@ -33,5 +36,27 @@
 }
 
 #collegePage {
+  display: none;
+}
+
+#collegeROI, #carLeasing {
+  height: 300px;
+  text-align: center;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  font-weight: bold;
+  font-family: fantasy;
+  cursor: pointer;
+}
+
+#collegeROI:hover {
+  background-color: red;
+}
+
+#carLeasing:hover {
+  background-color: black;
+}
+
+#results {
   display: none;
 }

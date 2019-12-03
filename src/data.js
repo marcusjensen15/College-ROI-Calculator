@@ -234,7 +234,7 @@ export class MyEducation{
         principal = principal + (this.studentLoanRate * principal);}
 
 
-      else if(principal <= 0 && i < 14600){return "it will take you " + Math.round(i/365) + " years to pay back your loan";}
+      else if(principal <= 0 && i < 14600){return "it will take you " + Math.round(i/365) + "<br> years to pay back your loan";}
 
       else if(i > 7300 && i % 30 === 0){
 
@@ -250,7 +250,7 @@ export class MyEducation{
       }
 
     }
-    return "you will not be able to pay back this loan in your lifetime. You will have " + "$"+ Math.round(principal) + " left to pay after 40 years."
+    return "you will not be able to pay back this loan in your lifetime. You will have" + "$" + Math.round(principal) + " left to pay after 40 years."
   }
 }
 //need to make sure it is delivering the correct values. i think it is overshooting the number of years it takes to payback

@@ -24,11 +24,12 @@ $(document).ready(function(){
     let userLifeStyle = $("input:radio[name=lifestyle]:checked").val();
     let userSchoolType = $("input:radio[name=typeOfSchool]:checked").val();
     let userFrequency = $("input:radio[name=payPercentage]:checked").val();
-    let userCashToday = $("#cashToday").val();
+    let userCashToday = parseInt($("#cashToday").val());
     // let myEducation = new MyEducation("English","in state public", "San Francisco","medium", 100000, "fast");
     let myEducation = new MyEducation(userMajor, userSchoolType, userCity, userLifeStyle, userCashToday, userFrequency);
-
-    $(".results").text(myEducation.paybackPeriod);
+    $("#collegePage").hide();
+    $("#results").show();
+    $("#finalResults").text(myEducation.paybackPeriod);
 
     //below is car lease testing
 
@@ -40,4 +41,12 @@ $(document).ready(function(){
 
   });
 
+  $("button#newCollege").click(function(){
+    $("#collegePage").show();
+    $("#results").hide();
+  });
+
+  $("button.restart").click(function(){
+    location.reload();
+  });
 });
