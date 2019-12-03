@@ -106,11 +106,11 @@ export let salaryByMajor = [
   {"major": "Sociology", "starting_sal": 36500 , "mid_career_sal": 58200},
   {"major": "Hospitality & Tourism", "starting_sal": 37800 , "mid_career_sal": 57500},
   {"major": "Drama", "starting_sal": 35900 , "mid_career_sal": 56900},
-  {"major": "Criminal Justice", "starting_sal": 35000 , "mid_career_sal": 56300}
+  {"major": "Criminal Justice", "starting_sal": 35000 , "mid_career_sal": 56300},
   {"major": "Nutrition", "starting_sal": 39900 , "mid_career_sal": 55300},
   {"major": "Music", "starting_sal": 35900 , "mid_career_sal": 55000},
   {"major": "Interior Design", "starting_sal": 36100 , "mid_career_sal": 53200},
-  {"major": "Spanish", "starting_sal": 34000 , "mid_career_sal": 53100}
+  {"major": "Spanish", "starting_sal": 34000 , "mid_career_sal": 53100},
   {"major": "Education", "starting_sal": 34900 , "mid_career_sal": 52000},
   {"major": "Religion", "starting_sal": 34100 , "mid_career_sal": 52000}
 
