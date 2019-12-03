@@ -24,10 +24,14 @@
   height: 0;
 }
 
-[type=radio] + h1, [type=radio] + img {
+[type=radio] + h1, [type=radio] + .colleges {
   cursor: pointer;
 }
 
-[type=radio]:checked + h1, [type=radio]:checked + img {
+[type=radio]:checked + h1, [type=radio]:checked + .colleges {
   outline: 2px solid #f00;
+}
+
+#collegePage {
+  display: none;
 }
