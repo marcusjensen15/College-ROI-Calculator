@@ -5,6 +5,17 @@ import './styles.css';
 import {MyEducation} from './data.js';
 
 $(document).ready(function(){
+  $("#collegeROI").click(function(event){
+    event.preventDefault();
+    $("#collegePage").show();
+    $("#firstPage").hide();
+  });
+
+  $("#carLeasing").click(function(event){
+    event.preventDefault();
+
+  });
+
   $("#calculator").submit(function(event){
     event.preventDefault();
     let userCity = $("#city option:selected").val();
