@@ -3,6 +3,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import {MyEducation} from './data.js';
+import {MyCarLease} from './backend-car-lease.js';
 
 $(document).ready(function(){
   $("#collegeROI").click(function(event){
@@ -29,27 +30,14 @@ $(document).ready(function(){
 
     $(".results").text(myEducation.paybackPeriod);
 
+    //below is car lease testing
+
+
+    let myCarLease = new MyCarLease(30000,4000,1000,0.05,8.5);
+
+    console.log(myCarLease);
+
+
   });
 
 });
-
-
-
-
-// console.log(myEducation);
-//
-// // console.log(myEducation.startingSalary());
-//
-// console.log(averageCostOfLiving[5].living_cost);
-//
-// console.log(salaryByMajor[4].mid_career_sal + salaryByMajor[0].mid_career_sal);
-//
-// console.log(lifeStyle[1].cost);
-//
-// console.log(federalTaxRate);
-//
-//
-// console.log(schoolType[1]);
-//
-//
-// console.log(paybackRate[1].frequency);
