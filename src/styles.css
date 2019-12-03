@@ -1,0 +1,18 @@
+.jumbotron {
+  text-align: center;
+}
+.form-control {
+  width: 200px;
+  border: 2px solid black;
+  padding: 15px;
+  margin: 10px;
+
+}
+
+#cashToday {
+  width: 200px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 10px;
+
+}
