@@ -21,9 +21,9 @@ export class MyCarLease{
 
     this.depreciationThreeYear =   this.depreciationThreeYear();
 
-    this.financingFeeThreeYear =   this.depreciationThreeYear();
+    this.financingFeeThreeYear =   this.financingFeeThreeYear();
 
-    this.salesTaxThreeYear =   this.depreciationThreeYear();
+    this.salesTaxThreeYear =   this.salesTaxThreeYear();
 
 
 
