@@ -74,7 +74,7 @@ export let salaryByMajor = [
   {"major": "Mechanical Engineering", "starting_sal": 57900 , "mid_career_sal": 93600},
   {"major": "Math", "starting_sal": 45400 , "mid_career_sal": 92400},
   {"major": "Physician Assistant", "starting_sal": 74300 , "mid_career_sal": 91700},
-  {"major": "Cival Engineering", "starting_sal": 53900 , "mid_career_sal": 90500},
+  {"major": "Civil Engineering", "starting_sal": 53900 , "mid_career_sal": 90500},
   {"major": "Construction", "starting_sal": 53700 , "mid_career_sal": 88900},
   {"major": "Finance", "starting_sal": 47900 , "mid_career_sal": 88300},
   {"major": "Managemnet Information Systems", "starting_sal": 49200 , "mid_career_sal": 82300},
@@ -250,7 +250,7 @@ export class MyEducation{
       }
 
     }
-    return "you will not be able to pay back this loan in your lifetime. You will have " + "$"+ Math.round(principal) + " left to pay after 40 years."
+    return "you will not be able to pay back this loan in your lifetime. You will have" + "$" + Math.round(principal) + " left to pay after 40 years."
   }
 }
 //need to make sure it is delivering the correct values. i think it is overshooting the number of years it takes to payback
