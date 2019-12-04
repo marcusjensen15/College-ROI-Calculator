@@ -48,6 +48,11 @@
 }
 
 
+#rotatingCard {
+  margin-bottom: 90px;
+}
+
+
 [type=radio] {
   position: absolute;
   opacity: 0;
@@ -59,9 +64,21 @@
   cursor: pointer;
 }
 
-[type=radio]:checked + h1, [type=radio]:checked + .colleges {
-  outline: 2px solid #5ee0ec;
+[type=radio]:checked + .colleges {
+  border-top: 5px solid #5ee0ec;
+  border-left: 5px solid #5ee0ec;
+  border-right: 5px solid #5ee0ec;
 }
+
+
+[type=radio]:checked + h1 {
+  border-bottom: 5px solid #5ee0ec;
+}
+
+.pos-f-t{
+  display: none;
+}
+
 
 #collegePage {
   display: none;
@@ -107,12 +124,73 @@
   text-align: center;
 }
 
+
 .gif, #carImg1, #carImg2, #carImg3{
+
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 300px;
+  height: 200px;
+}
+
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 100%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 133px;
+  perspective: 1000px;
+}
+
+
+.flip-card-inner {
+  position: relative;
   width: 100%;
   height: 150%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.washington {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 57%;
 }
 
 
@@ -129,6 +207,7 @@ form, #city {
 form, #major {
   display: inline-block;
 }
+
 
 
 
@@ -260,4 +339,12 @@ form, #major {
 @keyframes fadeIn {
     0% { opacity:0; }
     100% { opacity:100%; }
+
+#homeCollege, #home {
+  cursor: pointer;
+}
+
+.navbar {
+  margin-left: 94%;
+
 }
