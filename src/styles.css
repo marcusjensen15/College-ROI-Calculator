@@ -1,3 +1,20 @@
+/* <-----------College Styles----------------> */
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: 0.5s;
+  input[type="radio"]:checked ~ &,
+  input[type="checkbox"]:checked ~ & {
+    opacity: 1;
+    max-height: 100px;
+    overflow: visible;
+    padding: 10px 20px;
+    transform: scale(1);
+  }
+}
+
 .jumbotron {
   text-align: center;
   font-family: sans-serif;
@@ -12,14 +29,24 @@
 
 
 }
-
-#cashToday {
-  width: 200px;
-  border: 2px solid black;
-  padding: 5px;
-  margin: 10px;
-
+.pos-f-t{
+  display: none;
 }
+.image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 100%;
+}
+
+.washington{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 57%;
+}
+
 
 [type=radio] {
   position: absolute;
@@ -35,16 +62,8 @@
 [type=radio]:checked + h1, [type=radio]:checked + .colleges {
   outline: 2px solid #5ee0ec;
 }
-.pos-f-t{
-  display: none;
-}
 
 #collegePage {
-  display: none;
-}
-
-
-#car_lease {
   display: none;
 }
 
@@ -61,9 +80,12 @@
 #collegeROI:hover {
   background-color: red;
 }
+#cashToday {
+  width: 200px;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 10px;
 
-#carLeasing:hover {
-  background-color: black;
 }
 
 #results {
@@ -74,11 +96,18 @@
 
 }
 
-.colleges {
+
+
+
+/* <-----------------College + Car Styles----------------------> */
+
+
+
+.colleges, #carImg1, #carImg2, #carImg3 {
   text-align: center;
 }
 
-.gif{
+.gif, #carImg1, #carImg2, #carImg3{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -86,20 +115,6 @@
   height: 150%;
 }
 
-.image{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  height: 100%;
-}
-
-.washington{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 57%;
-}
 
 body {
   text-align: center;
@@ -115,18 +130,134 @@ form, #major {
   display: inline-block;
 }
 
-.reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transform: scale(0.8);
-  transition: 0.5s;
-  input[type="radio"]:checked ~ &,
-  input[type="checkbox"]:checked ~ & {
-    opacity: 1;
-    max-height: 100px;
-    overflow: visible;
-    padding: 10px 20px;
-    transform: scale(1);
-  }
+
+
+
+/* <-------------------------CAR STYLING-------------------> */
+
+
+
+.carInfo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.leaseResult {
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  float: center;
+
+  width: 400px;
+  /* border: 2px solid black; */
+  margin: 10px;
+}
+#car_lease {
+  display: none;
+}
+
+#carLeasing:hover {
+  background-color: black;
+}
+
+#carLeasing:hover {
+  background-color: black;
+}
+
+#userMsrp:hover {
+
+
+}
+
+
+
+
+/* below is help tip CSS */
+
+
+.help-tip{
+    position: absolute;
+    /* top: 18px;
+    right: 18px; */
+    text-align: center;
+    background-color: #BCDBEA;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: default;
+}
+
+.help-tip:before{
+    content:'?';
+    font-weight: bold;
+    color:#fff;
+}
+
+.help-tip:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip p{    /* The tooltip */
+    display: none;
+    text-align: left;
+    background-color: #1E2021;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: -4px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.help-tip p:before{ /* The pointer of the tooltip */
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:#1E2021;
+    right:10px;
+    top:-12px;
+}
+
+.help-tip p:after{ /* Prevents the tooltip from being hidden */
+    width:100%;
+    height:40px;
+    content:'';
+    position: absolute;
+    top:-40px;
+    left:0;
+}
+
+/* CSS animation */
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity:100%;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100%; }
 }
