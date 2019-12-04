@@ -8,17 +8,35 @@ import {MyCarLease} from './backend-car-lease.js';
 $(document).ready(function(){
   $("#collegeROI").click(function(event){
     event.preventDefault();
+    $(".pos-f-t").show();
     $("#collegePage").show();
     $("#firstPage").hide();
   });
   $("#carLeasing").click(function(event){
     event.preventDefault();
+    $(".pos-f-t").show();
     $("#car_lease").show();
     $("#firstPage").hide();
   });
+  $("#home").click(function(event){
+    event.preventDefault();
+    $(".pos-f-t").hide();
+    $("#car_lease").hide();
+    $("#firstPage").show();
 
+
+  });
+  $("#homeCollege").click(function(event){
+    event.preventDefault();
+    $(".pos-f-t").hide();
+    $("#collegePage").hide();
+    $("#firstPage").show();
+
+
+  });
   $(".carLeaseForm").submit(function(event){
     event.preventDefault();
+    $(".leaseResult").text(" ");
     let inputMsrp = parseFloat($("#userMsrp").val());
     let inputTradeIn = parseFloat($("#userTradeIn").val());
     let inputDownPayment = parseFloat($("#userDownPayment").val());
@@ -26,7 +44,7 @@ $(document).ready(function(){
     let inputApr = parseFloat($("#userApr").val());
 
     let myCarLease = new MyCarLease(inputMsrp,inputTradeIn,inputDownPayment,inputSalesTax,inputApr);
-
+    $(".leaseResult").append(`Over the total of your three year lease. <br> Depreciation cost: $${myCarLease.depreciationThreeYear} <br> Financing fee: $${myCarLease.financingFeeThreeYear} <br> Sales Tax: $${myCarLease.salesTaxThreeYear}`);
     console.log(myCarLease);
 
   });

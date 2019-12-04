@@ -34,6 +34,9 @@
 [type=radio]:checked + h1, [type=radio]:checked + .colleges {
   outline: 2px solid #5ee0ec;
 }
+.pos-f-t{
+  display: none;
+}
 
 #collegePage {
   display: none;
