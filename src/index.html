@@ -6,7 +6,7 @@
 <body>
   <div class="container">
     <div id="firstPage">
-      <div class="jumbotron">
+      <div class="tron">
         <h1>Financial Calculators</h1>
       </div>
       <div class="row">
@@ -27,11 +27,11 @@
       </div>
     </div>
     <div id="collegePage">
+
       <div class="pos-f-t">
         <div class="collapse" id="navbarToggleExternalContent">
           <div class="p-4">
             <h5 id="homeCollege"class="text-white h4">Home</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
           </div>
         </div>
         <nav class="navbar navbar-dark">
@@ -40,7 +40,8 @@
           </button>
         </nav>
       </div>
-      <div class="jumbotron">
+
+      <div class="tron">
         <h1>College Return on Investment Calculator</h1>
         <h5>So you're thinking about attending a four year school next year. Before you do, we suggest using our Return on Investment calculator below to figure out if school will leave you too far in the hole.</h5>
       </div>
@@ -169,18 +170,23 @@
 
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-group" id="rotatingCard">
           <h3>What type of lifestyle will you be living:</h3>
           <div class="row">
             <div class="col-md-4">
               <label>
                 <input type="radio" name="lifestyle" value="low" required>
                 <div class="colleges">
-                  <img src="https://media.giphy.com/media/xUOxf98yqNrtuXBQYw/giphy.gif" alt="Humble lifestyle" class="gif">
-                  <h2>Humble</h2>
-                  <div class="reveal-if-active">
-                    <p>Good job spending responsibly. If you choose this option you likely live at home or have cheap rent. you likely don't go out or spend frivolously.</p>
-
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="https://media.giphy.com/media/xUOxf98yqNrtuXBQYw/giphy.gif" alt="Humble lifestyle" class="gif">
+                      </div>
+                      <div class="flip-card-back">
+                        <h3>Humble</h3>
+                        <p>You are very frugile and are renting a studio apartment. You are not interested in buying luxurious items.</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </label>
@@ -189,8 +195,17 @@
               <label>
                 <input type="radio" name="lifestyle" value="medium">
                 <div class="colleges">
-                  <img src="https://thumbs.gfycat.com/RelievedPortlyAmericanwigeon-size_restricted.gif" alt="Likes to have some fun" class="gif">
-                  <h2>Average</h2>
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="https://thumbs.gfycat.com/RelievedPortlyAmericanwigeon-size_restricted.gif" alt="Likes to have some fun" class="gif">
+                      </div>
+                      <div class="flip-card-back">
+                        <h3>Average</h3>
+                        <p>Good job spending responsibly. If you choose this option you are renting. You likely don't go out everyday or buy luxurious items often.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </label>
             </div>
@@ -198,8 +213,17 @@
               <label>
                 <input type="radio" name="lifestyle" value="high">
                 <div class="colleges">
-                  <img src="https://media3.giphy.com/media/3o7btTyMK3gOKcBt0Q/giphy.gif" alt="baller lifestyle" class="gif">
-                  <h2>Baller</h2>
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="https://media3.giphy.com/media/3o7btTyMK3gOKcBt0Q/giphy.gif" alt="baller lifestyle" class="gif">
+                      </div>
+                      <div class="flip-card-back">
+                        <h3>Baller</h3>
+                        <p>You want to live in a mansion and have all the accesories that come along with being rich.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </label>
             </div>
@@ -211,7 +235,7 @@
             <div class="col-md-4">
               <label>
                 <input type="radio" name="typeOfSchool" value="in state public" required>
-                <div class="colleges">
+                <div class="howYouLive">
                   <img src="https://goducks.com/images/logos/site/site.png" alt="In state public school" class="image">
                   <h2>In State Public</h2>
                 </div>
@@ -220,7 +244,7 @@
             <div class="col-md-4">
               <label>
                 <input type="radio" name="typeOfSchool" value="out of state public">
-                <div class="colleges">
+                <div class="howYouLive">
                   <img src="https://gohuskies.com/images/logos/site/site.png" alt="Out of state public school" class="washington">
                   <h2>Out of State Public</h2>
                 </div>
@@ -229,7 +253,7 @@
             <div class="col-md-4">
               <label>
                 <input type="radio" name="typeOfSchool" value="private">
-                <div class="colleges">
+                <div class="howYouLive">
                   <img src="https://gostanford.com/images/logos/site/site.png" alt="Private school" class="image">
                   <h2>Private</h2>
                 </div>
@@ -279,7 +303,6 @@
         <div class="collapse" id="navbarToggleExternalContent">
           <div class="p-4">
             <h5 id="home"class="text-white h4">Home</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
           </div>
         </div>
         <nav class="navbar navbar-dark">
@@ -287,7 +310,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </nav>
-        <div class="jumbotron">
+        <div class="tron">
           <h1>Car Lease Calculator</h1>
         </div>
       </div>

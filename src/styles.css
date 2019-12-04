@@ -1,4 +1,4 @@
-.jumbotron {
+.tron {
   text-align: center;
   font-family: sans-serif;
   opacity: 80%;
@@ -21,6 +21,10 @@
 
 }
 
+#rotatingCard {
+  margin-bottom: 90px;
+}
+
 [type=radio] {
   position: absolute;
   opacity: 0;
@@ -28,13 +32,16 @@
   height: 0;
 }
 
-[type=radio] + h1, [type=radio] + .colleges {
+[type=radio] + h1, [type=radio] + .colleges, [type=radio] + .howYouLive {
   cursor: pointer;
 }
 
-[type=radio]:checked + h1, [type=radio]:checked + .colleges {
-  outline: 2px solid #5ee0ec;
+[type=radio]:checked + .colleges, [type=radio]:checked + .howYouLive, [type=radio]:checked + h1 {
+  border-top: 5px solid #5ee0ec;
+  padding-top: 5px;
+
 }
+
 .pos-f-t{
   display: none;
 }
@@ -78,15 +85,19 @@
   text-align: center;
 }
 
-.gif{
+.howYouLive {
+  text-align: center;
+}
+
+.gif {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  height: 150%;
+  width: 300px;
+  height: 200px;
 }
 
-.image{
+.image {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -94,17 +105,67 @@
   height: 100%;
 }
 
-.washington{
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 133px;
+  perspective: 1000px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 150%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.washington {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 57%;
 }
 
+
 body {
+  color: white;
   text-align: center;
-  background-color: #9f9595;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%235ee0ec' fill-opacity='0.52'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-image:url(http://bit.ly/2gPLxZ4);
+  width: 100%;
+  height: 100 % ;
 }
 
 
@@ -115,18 +176,10 @@ form, #major {
   display: inline-block;
 }
 
-.reveal-if-active {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transform: scale(0.8);
-  transition: 0.5s;
-  input[type="radio"]:checked ~ &,
-  input[type="checkbox"]:checked ~ & {
-    opacity: 1;
-    max-height: 100px;
-    overflow: visible;
-    padding: 10px 20px;
-    transform: scale(1);
-  }
+#homeCollege, #home {
+  cursor: pointer;
+}
+
+.navbar {
+  margin-left: 94%;
 }
