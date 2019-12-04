@@ -23,17 +23,17 @@ $(document).ready(function(){
     $(".pos-f-t").hide();
     $("#car_lease").hide();
     $("#firstPage").show();
-
-
+    location.reload();
   });
+
   $("#homeCollege").click(function(event){
     event.preventDefault();
     $(".pos-f-t").hide();
     $("#collegePage").hide();
     $("#firstPage").show();
-
-
+    location.reload();
   });
+
   $(".carLeaseForm").submit(function(event){
     event.preventDefault();
     $(".leaseResult").text(" ");
