@@ -44,7 +44,7 @@ $(document).ready(function(){
     let inputApr = parseFloat($("#userApr").val());
 
     let myCarLease = new MyCarLease(inputMsrp,inputTradeIn,inputDownPayment,inputSalesTax,inputApr);
-    $(".leaseResult").append(`Over the total of your three year lease. <br> Depreciation cost: $${myCarLease.depreciationThreeYear} <br> Financing fee: $${myCarLease.financingFeeThreeYear} <br> Sales Tax: $${myCarLease.salesTaxThreeYear}`);
+    $(".leaseResult").append(`<br>Over the total of your three year lease: <br> <br> Depreciation cost: $${myCarLease.depreciationThreeYear} <br> Financing fee: $${myCarLease.financingFeeThreeYear} <br> Sales Tax: $${myCarLease.salesTaxThreeYear}`);
     console.log(myCarLease);
 
   });

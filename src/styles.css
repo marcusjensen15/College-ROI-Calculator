@@ -183,3 +183,17 @@ form, #major {
 .navbar {
   margin-left: 94%;
 }
+
+#userMsrp, #userTradeIn, #userDownPayment, #userSalesTax, #userApr, #carLeasingButton, #car-lease-header{
+
+  margin-bottom: 30px;
+
+}
+
+#carrow {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+  height: 75%;
+}
