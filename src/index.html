@@ -48,7 +48,7 @@
       <form id="calculator">
         <div class="form-group">
           <h3>Where will you be living:</h3>
-          <select class="form-control" id="city">
+          <select class="form-control" id="city" required>
             <option value=""></option>
             <option value="Albuquerque">Albuquerque</option>
             <option value="Anchorage">Anchorage</option>
@@ -112,7 +112,7 @@
         </div>
         <div class="form-group">
           <h3>What is your major:</h3>
-          <select class="form-control" id="major">
+          <select class="form-control" id="major" required>
             <option value=""></option>
             <option value="Accounting">Accounting</option>
             <option value="Aerospace Engineering">Aerospace Engineering</option>
@@ -174,10 +174,14 @@
           <div class="row">
             <div class="col-md-4">
               <label>
-                <input type="radio" name="lifestyle" value="low" checked>
+                <input type="radio" name="lifestyle" value="low" required>
                 <div class="colleges">
                   <img src="https://media.giphy.com/media/xUOxf98yqNrtuXBQYw/giphy.gif" alt="Humble lifestyle" class="gif">
                   <h2>Humble</h2>
+                  <div class="reveal-if-active">
+                    <p>Good job spending responsibly. If you choose this option you likely live at home or have cheap rent. you likely don't go out or spend frivolously.</p>
+
+                  </div>
                 </div>
               </label>
             </div>
@@ -206,7 +210,7 @@
           <div class="row">
             <div class="col-md-4">
               <label>
-                <input type="radio" name="typeOfSchool" value="in state public" checked>
+                <input type="radio" name="typeOfSchool" value="in state public" required>
                 <div class="colleges">
                   <img src="https://goducks.com/images/logos/site/site.png" alt="In state public school" class="image">
                   <h2>In State Public</h2>
@@ -238,7 +242,7 @@
           <div class="row">
             <div class="col-md-4">
               <label>
-                <input type="radio" name="payPercentage" value="slow" checked>
+                <input type="radio" name="payPercentage" value="slow" required>
                 <h1>10%</h1>
               </label>
             </div>
@@ -258,7 +262,7 @@
         </div>
         <div class="cashToday">
           <h3>How much of your own cash are you putting down:</h3>
-          <input type="number" name="" id="cashToday">
+          <input type="number" name="" id="cashToday" required>
           <button type="submit" name="button">Calculate my ROI</button>
 
         </div>
@@ -302,6 +306,7 @@
       <div class="leaseResult">
 
       </div>
+
 
 
 
