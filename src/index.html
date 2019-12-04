@@ -30,7 +30,7 @@
       <div class="pos-f-t">
         <div class="collapse" id="navbarToggleExternalContent">
           <div class="p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
+            <h5 id="homeCollege"class="text-white h4">Home</h5>
             <span class="text-muted">Toggleable via the navbar brand.</span>
           </div>
         </div>
@@ -269,6 +269,22 @@
 
       </form>
     </div>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4">
+          <h5 id="home"class="text-white h4">Home</h5>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      <div class="jumbotron">
+        <h1>Car Lease Calculator</h1>
+      </div>
+    </div>
     <div id="results">
       <h1 id="finalResults"></h1>
       <button type="button" id="newCollege">New</button>
@@ -281,12 +297,15 @@
         <input id="userTradeIn" type="text" name="tradeInCredit">
         <h3>Down payment amount:</h3>
         <input id="userDownPayment" type="text" name="downPayment">
-        <h3>Sales Tax:</h3>
+        <h3>Local Sales Tax Percentage:</h3>
         <input id="userSalesTax" type="text" name="salesTax">
-        <h3>APR:</h3>
-        <input id="userApr" type="text" name="apr">
-        <button id = "carLeasing" type="submit" name="button">Enter Here to calculate</button>
+        <h3>Annual Percentage Rate:</h3>
+        <input id="userApr" type="text" name="apr"> <br> <br>
+        <button id = "carLeasingButton" type="submit" name="button">Enter Here to calculate</button>
       </form>
+      <div class="leaseResult">
+
+      </div>
 
 
 

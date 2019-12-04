@@ -3,10 +3,11 @@ export class MyCarLease{
     this.car_MSRP = car_MSRP;
     this.trade_in_credit = trade_in_credit;
     this.down_payment = down_payment;
-    this.sales_tax = sales_tax;
+    this.sales_tax = sales_tax / 100;
     this.apr = apr;
     this.leaseTerm = 36;
 
+    
     this.netCapCost = this.netCapCost();
     this.residual_value = this.residual_value();
     this.depreciationFeeMonthly = this.depreciationFeeMonthly(); //needs net cap result
@@ -30,6 +31,8 @@ export class MyCarLease{
 
 
   }
+
+
 
   netCapCost(){
     let netCap = this.car_MSRP - (this.trade_in_credit + this.down_payment);
