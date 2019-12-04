@@ -32,18 +32,14 @@
   height: 0;
 }
 
-[type=radio] + h1, [type=radio] + .colleges {
+[type=radio] + h1, [type=radio] + .colleges, [type=radio] + .howYouLive {
   cursor: pointer;
 }
 
-[type=radio]:checked + .colleges {
+[type=radio]:checked + .colleges, [type=radio]:checked + .howYouLive, [type=radio]:checked + h1 {
   border-top: 5px solid #5ee0ec;
-  border-left: 5px solid #5ee0ec;
-  border-right: 5px solid #5ee0ec;
-}
+  padding-top: 5px;
 
-[type=radio]:checked + h1 {
-  border-bottom: 5px solid #5ee0ec;
 }
 
 .pos-f-t{
@@ -86,6 +82,10 @@
 }
 
 .colleges {
+  text-align: center;
+}
+
+.howYouLive {
   text-align: center;
 }
 
