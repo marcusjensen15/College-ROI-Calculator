@@ -309,22 +309,61 @@
             <h1>Car Lease Calculator</h1>
           </div>
         </div>
-        <form class="carLeaseForm">
-          <h3>Enter Vehicle MSRP:</h3>
-          <input id="userMsrp" type="text" name="msrp">
-          <h3>How much is your trade in worth:</h3>
-          <input id="userTradeIn" type="text" name="tradeInCredit">
-          <h3>Down payment amount:</h3>
-          <input id="userDownPayment" type="text" name="downPayment">
-          <h3>Local Sales Tax Percentage:</h3>
-          <input id="userSalesTax" type="text" name="salesTax">
-          <h3>Annual Percentage Rate:</h3>
-          <input id="userApr" type="text" name="apr"> <br> <br>
-          <button id = "carLeasingButton" type="submit" class="btn btn-outline-light" name="button">Enter Here to calculate</button>
-        </form>
-        <div class="leaseResult">
+
+        <nav class="navbar navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+        <div class="tron">
+          <h1 id="car-lease-header">Car Lease Calculator</h1>
         </div>
       </div>
+      <form class="carLeaseForm">
+        <div class="row">
+
+        <div class="col-md-4">
+          <img id="carRow" src="https://media.giphy.com/media/YVvwBiHNYuKMU/giphy.gif" alt="honda">
+        </div>
+        <div class="col-md-4">
+          <img id="carRow" src="https://www.tflcar.com/wp-content/uploads/2018/02/Toyota-4Runner-TRD-Pro-water.gif" alt="toyota4runner">
+        </div>
+        <div class="col-md-4">
+          <img id="carRow" src="https://media.giphy.com/media/8PmdoPk5JZpTEEy46I/giphy.gif" alt="G-king">
+
+        </div>
+      </div>
+        <h3>Enter Vehicle MSRP:</h3>
+        <input id="userMsrp" type="text" name="msrp" required>
+        <br>
+        <h3>How much is your trade in worth:</h3>
+        <input id="userTradeIn" type="text" name="tradeInCredit" required>
+        <br>
+        <h3>Down payment amount:</h3>
+        <input id="userDownPayment" type="text" name="downPayment" required>
+        <br>
+        <h3>Local Sales Tax Percentage:</h3>
+        <input id="userSalesTax" type="text" name="salesTax">
+        <br>
+        <h3>Annual Percentage Rate:</h3>
+        <input id="userApr" type="text" name="apr" required> <br> <br>
+
+        <button id = "carLeasingButton" type="submit" class="btn btn-outline-light" name="button">Click Here to calculate</button>
+      </form>
+      <div class="leaseResult">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
     </div>
 </body>
 </html>
