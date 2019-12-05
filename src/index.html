@@ -4,307 +4,312 @@
   <title>College Return on Investment Calculator</title>
 </head>
 <body>
-  <div class="container">
-    <div id="firstPage">
-      <div class="tron">
-        <h1>Financial Calculators</h1>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card text-white bg-dark mb-3">
-            <div class="card-body" id="collegeROI">
-              <h5 class="card-title">College Return on investment</h5>
+    <div class="container">
+
+      <div id="firstPage">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card text-white mb-3 round black">
+              <div class="card-body" id="collegeROI">
+                <h5 class="card-title">College Return on investment</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card text-white mb-3 round black">
+              <div class="card-body" id="carLeasing">
+                <h5 class="card-title">Car Leasing</h5>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card text-white bg-danger mb-3">
-            <div class="card-body" id="carLeasing">
-              <h5 class="card-title">Car Leasing</h5>
+      </div>
+      <div id="collegePage">
+
+        <div class="pos-f-t">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4">
+              <h5 id="homeCollege"class="text-white h4">Home</h5>
             </div>
           </div>
+          <nav class="navbar navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
         </div>
-      </div>
-    </div>
-    <div id="collegePage">
 
-      <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="p-4">
-            <h5 id="homeCollege"class="text-white h4">Home</h5>
+        <div class="tron">
+          <h1>College Return on Investment Calculator</h1>
+          <h5>So you're thinking about attending a four year school next year. Before you do, we suggest using our Return on Investment calculator below to figure out if school will leave you too far in the hole.</h5>
+        </div>
+
+        <form id="calculator">
+          <div class="form-group">
+            <h3>Where will you be living:</h3>
+            <select class="form-control" id="city" required>
+              <option value=""></option>
+              <option value="Albuquerque">Albuquerque</option>
+              <option value="Anchorage">Anchorage</option>
+              <option value="Atlanta">Atlanta</option>
+              <option value="Austin">Austin</option>
+              <option value="Baltimore">Baltimore</option>
+              <option value="Billings">Billings</option>
+              <option value="Birmingham">Birmingham</option>
+              <option value="Boise">Boise</option>
+              <option value="Boston">Boston</option>
+              <option value="Bridgeport">Bridgeport</option>
+              <option value="Burlington">Burlington</option>
+              <option value="Charleston">Charleston</option>
+              <option value="Charleston, WV">Charleston, WV</option>
+              <option value="Charlotte">Charlotte</option>
+              <option value="Cheyenne">Cheyenne</option>
+              <option value="Chicago">Chicago</option>
+              <option value="Columbus">Columbus</option>
+              <option value="Dallas">Dallas</option>
+              <option value="Denver">Denver</option>
+              <option value="Des Moines">Des Moines</option>
+              <option value="Detroit">Detroit</option>
+              <option value="Fargo">Fargo</option>
+              <option value="Honolulu">Honolulu</option>
+              <option value="Houston">Houston</option>
+              <option value="Indianapolis">Indianapolis</option>
+              <option value="Jacksonville">Jacksonville</option>
+              <option value="Kansas City">Kansas City</option>
+              <option value="Las Vegas">Las Vegas</option>
+              <option value="Little Rock">Little Rock</option>
+              <option value="Los Angeles">Los Angeles</option>
+              <option value="Louisville">Louisville</option>
+              <option value="Manchester">Manchester</option>
+              <option value="Milwaukee">Milwaukee</option>
+              <option value="Minneapolis">Minneapolis</option>
+              <option value="Nashville">Nashville</option>
+              <option value="Newark">Newark</option>
+              <option value="New Orleans">New Orleans</option>
+              <option value="New York">New York</option>
+              <option value="Oklahoma City">Oklahoma City</option>
+              <option value="Omaha">Omaha</option>
+              <option value="Pheonix">Pheonix</option>
+              <option value="Philadelphia">Philadelphia</option>
+              <option value="Portland, ME">Portland, ME</option>
+              <option value="Portland, OR">Portland, OR</option>
+              <option value="Providence">Providence</option>
+              <option value="Salt Lake City">Salt Lake City</option>
+              <option value="San Antonio">San Antonio</option>
+              <option value="San Diego">San Diego</option>
+              <option value="San Francisco">San Francisco</option>
+              <option value="San Jose">San Jose</option>
+              <option value="Seattle">Seattle</option>
+              <option value="Sioux Falls">Sioux Falls</option>
+              <option value="Virginia Beach">Virginia Beach</option>
+              <option value="Wichita">Wichita</option>
+              <option value="Wilmington">Wilmington</option>
+
+
+
+            </select>
           </div>
-        </div>
-        <nav class="navbar navbar-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-      </div>
-
-      <div class="tron">
-        <h1>College Return on Investment Calculator</h1>
-        <h5>So you're thinking about attending a four year school next year. Before you do, we suggest using our Return on Investment calculator below to figure out if school will leave you too far in the hole.</h5>
-      </div>
-
-      <form id="calculator">
-        <div class="form-group">
-          <h3>Where will you be living:</h3>
-          <select class="form-control" id="city" required>
-            <option value=""></option>
-            <option value="Albuquerque">Albuquerque</option>
-            <option value="Anchorage">Anchorage</option>
-            <option value="Atlanta">Atlanta</option>
-            <option value="Austin">Austin</option>
-            <option value="Baltimore">Baltimore</option>
-            <option value="Billings">Billings</option>
-            <option value="Birmingham">Birmingham</option>
-            <option value="Boise">Boise</option>
-            <option value="Boston">Boston</option>
-            <option value="Bridgeport">Bridgeport</option>
-            <option value="Burlington">Burlington</option>
-            <option value="Charleston">Charleston</option>
-            <option value="Charleston, WV">Charleston, WV</option>
-            <option value="Charlotte">Charlotte</option>
-            <option value="Cheyenne">Cheyenne</option>
-            <option value="Chicago">Chicago</option>
-            <option value="Columbus">Columbus</option>
-            <option value="Dallas">Dallas</option>
-            <option value="Denver">Denver</option>
-            <option value="Des Moines">Des Moines</option>
-            <option value="Detroit">Detroit</option>
-            <option value="Fargo">Fargo</option>
-            <option value="Honolulu">Honolulu</option>
-            <option value="Houston">Houston</option>
-            <option value="Indianapolis">Indianapolis</option>
-            <option value="Jacksonville">Jacksonville</option>
-            <option value="Kansas City">Kansas City</option>
-            <option value="Las Vegas">Las Vegas</option>
-            <option value="Little Rock">Little Rock</option>
-            <option value="Los Angeles">Los Angeles</option>
-            <option value="Louisville">Louisville</option>
-            <option value="Manchester">Manchester</option>
-            <option value="Milwaukee">Milwaukee</option>
-            <option value="Minneapolis">Minneapolis</option>
-            <option value="Nashville">Nashville</option>
-            <option value="Newark">Newark</option>
-            <option value="New Orleans">New Orleans</option>
-            <option value="New York">New York</option>
-            <option value="Oklahoma City">Oklahoma City</option>
-            <option value="Omaha">Omaha</option>
-            <option value="Pheonix">Pheonix</option>
-            <option value="Philadelphia">Philadelphia</option>
-            <option value="Portland, ME">Portland, ME</option>
-            <option value="Portland, OR">Portland, OR</option>
-            <option value="Providence">Providence</option>
-            <option value="Salt Lake City">Salt Lake City</option>
-            <option value="San Antonio">San Antonio</option>
-            <option value="San Diego">San Diego</option>
-            <option value="San Francisco">San Francisco</option>
-            <option value="San Jose">San Jose</option>
-            <option value="Seattle">Seattle</option>
-            <option value="Sioux Falls">Sioux Falls</option>
-            <option value="Virginia Beach">Virginia Beach</option>
-            <option value="Wichita">Wichita</option>
-            <option value="Wilmington">Wilmington</option>
+          <div class="form-group">
+            <h3>What is your major:</h3>
+            <select class="form-control" id="major" required>
+              <option value=""></option>
+              <option value="Accounting">Accounting</option>
+              <option value="Aerospace Engineering">Aerospace Engineering</option>
+              <option value="Agriculture">Agriculture</option>
+              <option value="Architecture">Architecture</option>
+              <option value="Art History">Art History</option>
+              <option value="Anthropology">Anthropology</option>
+              <option value="Biology">Biology</option>
+              <option value="Business Management">Business Management</option>
+              <option value="Civil Engineering">Civil Engineering</option>
+              <option value="Chemical Engineering">Chemical Engineering</option>
+              <option value="Chemistry">Chemistry</option>
+              <option value="Communications">Communications</option>
+              <option value="Computer Engineering">Computer Engineering</option>
+              <option value="Computer Science">Computer Science</option>
+              <option value="Construction">Construction</option>
+              <option value="Criminal Justice">Criminal Justice</option>
+              <option value="Drama">Drama</option>
+              <option value="Education">Education</option>
+              <option value="Economics">Economics</option>
+              <option value="Electrical Engineering">Electrical Engineering</option>
+              <option value="English">English</option>
+              <option value="Film">Film</option>
+              <option value="Finance">Finance</option>
+              <option value="Forestry">Forestry</option>
+              <option value="Geography">Geography</option>
+              <option value="Geology">Geology</option>
+              <option value="Graphic Design">Graphic Design</option>
+              <option value="Health Care Administration">Health Care Administration</option>
+              <option value="History">History</option>
+              <option value="Hospitality & Tourism">Hospitality & Tourism</option>
+              <option value="Industrial Engineering">Industrial Engineering</option>
+              <option value="Information Technology">Information Technology</option>
+              <option value="International Relations">International Relations</option>
+              <option value="Interior Design">Interior Design</option>
+              <option value="Journalism">Journalism</option>
+              <option value="Managemnet Information Systems">Managemnet Information Systems</option>
+              <option value="Math">Math</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Mechanical Engineering">Mechanical Engineering</option>
+              <option value="Music">Music</option>
+              <option value="Nutrition">Nutrition</option>
+              <option value="Nursing">Nursing</option>
+              <option value="Philosophy">Philosophy</option>
+              <option value="Physician Assistant">Physician Assistant</option>
+              <option value="Physics">Physics</option>
+              <option value="Political Science">Political Science</option>
+              <option value="Psychology">Psychology</option>
+              <option value="Religion">Religion</option>
+              <option value="Sociology">Sociology</option>
+              <option value="Spanish">Spanish</option>
 
 
 
-          </select>
-        </div>
-        <div class="form-group">
-          <h3>What is your major:</h3>
-          <select class="form-control" id="major" required>
-            <option value=""></option>
-            <option value="Accounting">Accounting</option>
-            <option value="Aerospace Engineering">Aerospace Engineering</option>
-            <option value="Agriculture">Agriculture</option>
-            <option value="Architecture">Architecture</option>
-            <option value="Art History">Art History</option>
-            <option value="Anthropology">Anthropology</option>
-            <option value="Biology">Biology</option>
-            <option value="Business Management">Business Management</option>
-            <option value="Civil Engineering">Civil Engineering</option>
-            <option value="Chemical Engineering">Chemical Engineering</option>
-            <option value="Chemistry">Chemistry</option>
-            <option value="Communications">Communications</option>
-            <option value="Computer Engineering">Computer Engineering</option>
-            <option value="Computer Science">Computer Science</option>
-            <option value="Construction">Construction</option>
-            <option value="Criminal Justice">Criminal Justice</option>
-            <option value="Drama">Drama</option>
-            <option value="Education">Education</option>
-            <option value="Economics">Economics</option>
-            <option value="Electrical Engineering">Electrical Engineering</option>
-            <option value="English">English</option>
-            <option value="Film">Film</option>
-            <option value="Finance">Finance</option>
-            <option value="Forestry">Forestry</option>
-            <option value="Geography">Geography</option>
-            <option value="Geology">Geology</option>
-            <option value="Graphic Design">Graphic Design</option>
-            <option value="Health Care Administration">Health Care Administration</option>
-            <option value="History">History</option>
-            <option value="Hospitality & Tourism">Hospitality & Tourism</option>
-            <option value="Industrial Engineering">Industrial Engineering</option>
-            <option value="Information Technology">Information Technology</option>
-            <option value="International Relations">International Relations</option>
-            <option value="Interior Design">Interior Design</option>
-            <option value="Journalism">Journalism</option>
-            <option value="Managemnet Information Systems">Managemnet Information Systems</option>
-            <option value="Math">Math</option>
-            <option value="Marketing">Marketing</option>
-            <option value="Mechanical Engineering">Mechanical Engineering</option>
-            <option value="Music">Music</option>
-            <option value="Nutrition">Nutrition</option>
-            <option value="Nursing">Nursing</option>
-            <option value="Philosophy">Philosophy</option>
-            <option value="Physician Assistant">Physician Assistant</option>
-            <option value="Physics">Physics</option>
-            <option value="Political Science">Political Science</option>
-            <option value="Psychology">Psychology</option>
-            <option value="Religion">Religion</option>
-            <option value="Sociology">Sociology</option>
-            <option value="Spanish">Spanish</option>
-
-
-
-          </select>
-        </div>
-        <div class="form-group" id="rotatingCard">
-          <h3>What type of lifestyle will you be living:</h3>
-          <div class="row">
-            <div class="col-md-4">
-              <label>
-                <input type="radio" name="lifestyle" value="low" required>
-                <div class="colleges">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="https://media.giphy.com/media/xUOxf98yqNrtuXBQYw/giphy.gif" alt="Humble lifestyle" class="gif">
-                      </div>
-                      <div class="flip-card-back">
-                        <h3>Humble</h3>
-                        <p>You are very frugile and are renting a studio apartment. You are not interested in buying luxurious items.</p>
+            </select>
+          </div>
+          <div class="form-group" id="rotatingCard">
+            <h3>What type of lifestyle will you be living:</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <label>
+                  <input type="radio" name="lifestyle" value="low" required>
+                  <div class="colleges">
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="https://media.giphy.com/media/xUOxf98yqNrtuXBQYw/giphy.gif" alt="Humble lifestyle" class="gif">
+                        </div>
+                        <div class="flip-card-back">
+                          <h3>Humble</h3>
+                          <p>You are very frugile and are renting a studio apartment. You are not interested in buying luxurious items.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </label>
-            </div>
-            <div class="col-md-4">
-              <label>
-                <input type="radio" name="lifestyle" value="medium">
-                <div class="colleges">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="https://thumbs.gfycat.com/RelievedPortlyAmericanwigeon-size_restricted.gif" alt="Likes to have some fun" class="gif">
-                      </div>
-                      <div class="flip-card-back">
-                        <h3>Average</h3>
-                        <p>Good job spending responsibly. If you choose this option you are renting. You likely don't go out everyday or buy luxurious items often.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </label>
-            </div>
-            <div class="col-md-4">
-              <label>
-                <input type="radio" name="lifestyle" value="high">
-                <div class="colleges">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="https://media3.giphy.com/media/3o7btTyMK3gOKcBt0Q/giphy.gif" alt="baller lifestyle" class="gif">
-                      </div>
-                      <div class="flip-card-back">
-                        <h3>Baller</h3>
-                        <p>You want to live in a mansion and have all the accesories that come along with being rich.</p>
+                </label>
+              </div>
+              <div class="col-md-4">
+                <label>
+                  <input type="radio" name="lifestyle" value="medium">
+                  <div class="colleges">
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="https://thumbs.gfycat.com/RelievedPortlyAmericanwigeon-size_restricted.gif" alt="Likes to have some fun" class="gif">
+                        </div>
+                        <div class="flip-card-back">
+                          <h3>Average</h3>
+                          <p>Good job spending responsibly. If you choose this option you are renting. You likely don't go out everyday or buy luxurious items often.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </label>
+                </label>
+              </div>
+              <div class="col-md-4">
+                <label>
+                  <input type="radio" name="lifestyle" value="high">
+                  <div class="colleges">
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="https://media3.giphy.com/media/3o7btTyMK3gOKcBt0Q/giphy.gif" alt="baller lifestyle" class="gif">
+                        </div>
+                        <div class="flip-card-back">
+                          <h3>Baller</h3>
+                          <p>You want to live in a mansion and have all the accesories that come along with being rich.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="form-group">
-          <h3>What type of school will you be attending:</h3>
-          <div class="row">
-            <div class="col-md-4">
-              <label>
-                <input type="radio" name="typeOfSchool" value="in state public" required>
-                <div class="howYouLive">
-                  <img src="https://goducks.com/images/logos/site/site.png" alt="In state public school" class="image">
-                  <h2>In State Public</h2>
-                </div>
-              </label>
-            </div>
-            <div class="col-md-4">
-              <label>
-                <input type="radio" name="typeOfSchool" value="out of state public">
-                <div class="howYouLive">
-                  <img src="https://gohuskies.com/images/logos/site/site.png" alt="Out of state public school" class="washington">
-                  <h2>Out of State Public</h2>
-                </div>
-              </label>
-            </div>
-            <div class="col-md-4">
-              <label>
-                <input type="radio" name="typeOfSchool" value="private">
-                <div class="howYouLive">
-                  <img src="https://gostanford.com/images/logos/site/site.png" alt="Private school" class="image">
-                  <h2>Private</h2>
-                </div>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <h3>How quickly would you like to pay back your student loans:</h3>
-          <div class="row">
-            <div class="col-md-4">
-              <label>
-                <input type="radio" name="payPercentage" value="slow" required>
-                <h1>10%</h1>
-              </label>
-            </div>
-            <div class="col-md-4">
-              <label>
-                <input type="radio" name="payPercentage" value="medium">
-                <h1>15%</h1>
-              </label>
-            </div>
-            <div class="col-md-4">
-              <label>
-                <input type="radio" name="payPercentage" value="fast">
-                <h1>25%</h1>
-              </label>
+          <div class="form-group">
+            <h3>What type of school will you be attending:</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <label>
+                  <input type="radio" name="typeOfSchool" value="in state public" required>
+                  <div class="howYouLive">
+                    <img src="https://goducks.com/images/logos/site/site.png" alt="In state public school" class="image">
+                    <h2>In State Public</h2>
+                  </div>
+                </label>
+              </div>
+              <div class="col-md-4">
+                <label>
+                  <input type="radio" name="typeOfSchool" value="out of state public">
+                  <div class="howYouLive">
+                    <img src="https://gohuskies.com/images/logos/site/site.png" alt="Out of state public school" class="washington">
+                    <h2>Out of State Public</h2>
+                  </div>
+                </label>
+              </div>
+              <div class="col-md-4">
+                <label>
+                  <input type="radio" name="typeOfSchool" value="private">
+                  <div class="howYouLive">
+                    <img src="https://gostanford.com/images/logos/site/site.png" alt="Private school" class="image">
+                    <h2>Private</h2>
+                  </div>
+                </label>
+              </div>
             </div>
           </div>
+          <div class="form-group">
+            <h3>How quickly would you like to pay back your student loans:</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <label>
+                  <input type="radio" name="payPercentage" value="slow" required>
+                  <h1 class="roundUnderline">10%</h1>
+                </label>
+              </div>
+              <div class="col-md-4 roundUnderline">
+                <label>
+                  <input type="radio" name="payPercentage" value="medium">
+                  <h1 class="roundUnderline">15%</h1>
+                </label>
+              </div>
+              <div class="col-md-4 roundUnderline">
+                <label>
+                  <input type="radio" name="payPercentage" value="fast">
+                  <h1 class="roundUnderline">25%</h1>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="cashToday">
+            <h3>How much of your own cash are you putting down:</h3>
+            <input type="number" name="" id="cashToday" required>
+            <button type="submit" name="button" class="btn btn-outline-light">Calculate my ROI</button>
+          </div>
+        </form>
+      </div>
+      <div id="results">
+        <h1 id="finalResults"></h1>
+        <button type="button" class="btn btn-outline-light" id="newCollege">New</button>
+      </div>
+      <div id="car_lease">
+        <div class="pos-f-t">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4">
+              <h5 id="home"class="text-white h4">Home</h5>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+          <div class="tron">
+            <h1>Car Lease Calculator</h1>
+          </div>
         </div>
-        <div class="cashToday">
-          <h3>How much of your own cash are you putting down:</h3>
-          <input type="number" name="" id="cashToday" required>
-          <button type="submit" name="button">Calculate my ROI</button>
 
-        </div>
-
-      </form>
-    </div>
-
-    <div id="results">
-      <h1 id="finalResults"></h1>
-      <button type="button" id="newCollege">New</button>
-    </div>
-    <div id="car_lease">
-      <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="p-4">
-            <h5 id="home"class="text-white h4">Home</h5>
-          </div>
-        </div>
         <nav class="navbar navbar-dark">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -343,7 +348,7 @@
         <h3>Annual Percentage Rate:</h3>
         <input id="userApr" type="text" name="apr" required> <br> <br>
 
-        <button id = "carLeasingButton" type="submit" name="button">Click Here to calculate</button>
+        <button id = "carLeasingButton" type="submit" class="btn btn-outline-light" name="button">Click Here to calculate</button>
       </form>
       <div class="leaseResult">
 
@@ -358,7 +363,7 @@
 
 
 
+
     </div>
-  </div>
 </body>
 </html>
