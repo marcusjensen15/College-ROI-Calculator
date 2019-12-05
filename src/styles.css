@@ -30,16 +30,14 @@ body {
 .tron {
   text-align: center;
   font-family: sans-serif;
-  opacity: 80%;
   margin-top: 20px;
 }
+
 .form-control {
   width: 200px;
   border: 2px solid black;
   padding: 15px;
   margin: 10px;
-
-
 }
 
 #cashToday {
@@ -47,7 +45,6 @@ body {
   border: 2px solid black;
   padding: 5px;
   margin: 10px;
-
 }
 
 #rotatingCard {
@@ -99,14 +96,12 @@ body {
 }
 .round {
   border-radius: 10%;
+  background-color: #b4033b;
 }
 
-#collegeROI:hover {
-  background-color: red;
-}
-
-#carLeasing:hover {
-  background-color: black;
+#collegeROI:hover, #carLeasing:hover {
+  background-color: lightGray;
+  color: black;
 }
 
 #results {
@@ -183,7 +178,7 @@ body {
 
 
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: #b4033b;
   color: white;
   transform: rotateY(180deg);
 }

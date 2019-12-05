@@ -9,14 +9,14 @@
       <div id="firstPage">
         <div class="row">
           <div class="col-md-6">
-            <div class="card text-white bg-dark mb-3 round">
+            <div class="card text-white mb-3 round black">
               <div class="card-body" id="collegeROI">
                 <h5 class="card-title">College Return on investment</h5>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="card text-white bg-danger mb-3 round">
+            <div class="card text-white mb-3 round black">
               <div class="card-body" id="carLeasing">
                 <h5 class="card-title">Car Leasing</h5>
               </div>
@@ -285,16 +285,13 @@
           <div class="cashToday">
             <h3>How much of your own cash are you putting down:</h3>
             <input type="number" name="" id="cashToday" required>
-            <button type="submit" name="button">Calculate my ROI</button>
-
+            <button type="submit" name="button" class="btn btn-outline-light">Calculate my ROI</button>
           </div>
-
         </form>
       </div>
-
       <div id="results">
         <h1 id="finalResults"></h1>
-        <button type="button" id="newCollege">New</button>
+        <button type="button" class="btn btn-outline-light" id="newCollege">New</button>
       </div>
       <div id="car_lease">
         <div class="pos-f-t">
@@ -323,23 +320,11 @@
           <input id="userSalesTax" type="text" name="salesTax">
           <h3>Annual Percentage Rate:</h3>
           <input id="userApr" type="text" name="apr"> <br> <br>
-          <button id = "carLeasingButton" type="submit" name="button">Enter Here to calculate</button>
+          <button id = "carLeasingButton" type="submit" class="btn btn-outline-light" name="button">Enter Here to calculate</button>
         </form>
         <div class="leaseResult">
-
         </div>
-
-
-
-
-
-
-
-
-
-
       </div>
     </div>
-
 </body>
 </html>
